@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - Abo Salah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Abo <span>Salah</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="nav-icon search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="cart-count">
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Header -->
+    <section class="products-header">
+        <div class="container">
+            <h1>منتجاتنا</h1>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>/</span>
+                <span>المنتجات</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container">
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <h3 class="filter-title">الماركات</h3>
+                        <div class="filter-options">
+                            <label>
+                                <input type="checkbox" name="brand" value="nike"> Nike
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" value="adidas"> Adidas
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" value="puma"> Puma
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" value="reebok"> Reebok
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" value="new balance"> New Balance
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-title">النوع</h3>
+                        <div class="filter-options">
+                            <label>
+                                <input type="checkbox" name="type" value="running"> أحذية جري
+                            </label>
+                            <label>
+                                <input type="checkbox" name="type" value="casual"> أحذية كاجوال
+                            </label>
+                            <label>
+                                <input type="checkbox" name="type" value="basketball"> أحذية كرة سلة
+                            </label>
+                            <label>
+                                <input type="checkbox" name="type" value="football"> أحذية كرة قدم
+                            </label>
+                            <label>
+                                <input type="checkbox" name="type" value="training"> أحذية تدريب
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-title">السعر</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="300" value="300" class="price-slider" id="price-slider">
+                            <div class="price-inputs">
+                                <input type="number" id="min-price" placeholder="من" class="price-input">
+                                <input type="number" id="max-price" placeholder="إلى" class="price-input">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary filter-btn">تطبيق الفلتر</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid-container">
+                    <div class="products-top">
+                        <div class="products-count">عرض 12 منتج</div>
+                        <div class="sort-options">
+                            <span class="sort-label">ترتيب حسب:</span>
+                            <select class="sort-select">
+                                <option value="default">الافتراضي</option>
+                                <option value="price-low-high">السعر: من الأقل إلى الأعلى</option>
+                                <option value="price-high-low">السعر: من الأعلى إلى الأقل</option>
+                            </select>
+                        </div>
+                        <div class="view-options">
+                            <div class="view-option grid-view active">
+                                <i class="fas fa-th"></i>
+                            </div>
+                            <div class="view-option list-view">
+                                <i class="fas fa-list"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product1.jpg" alt="Nike Air Max">
+                                <div class="product-badge">جديد</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Nike</div>
+                                <div class="product-name">Nike Air Max 270</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$150</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product2.jpg" alt="Adidas Ultraboost">
+                                <div class="product-badge">خصم 20%</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Adidas</div>
+                                <div class="product-name">Adidas Ultraboost 21</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="old-price">$180</span>
+                                        <span class="price">$144</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product3.jpg" alt="Puma RS-X">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Puma</div>
+                                <div class="product-name">Puma RS-X Reinvention</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$120</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product4.jpg" alt="Nike Jordan">
+                                <div class="product-badge">حصري</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Nike</div>
+                                <div class="product-name">Nike Air Jordan 1</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$170</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product5.jpg" alt="Adidas NMD">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Adidas</div>
+                                <div class="product-name">Adidas NMD R1</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$130</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product6.jpg" alt="New Balance 990">
+                                <div class="product-badge">خصم 15%</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">New Balance</div>
+                                <div class="product-name">New Balance 990v5</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="old-price">$175</span>
+                                        <span class="price">$149</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product7.jpg" alt="Reebok Classic">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Reebok</div>
+                                <div class="product-name">Reebok Classic Leather</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$80</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product8.jpg" alt="Nike Air Force">
+                                <div class="product-badge">الأكثر مبيعاً</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Nike</div>
+                                <div class="product-name">Nike Air Force 1</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$100</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product9.jpg" alt="Puma Suede">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Puma</div>
+                                <div class="product-name">Puma Suede Classic</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$70</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product10.jpg" alt="Adidas Stan Smith">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Adidas</div>
+                                <div class="product-name">Adidas Stan Smith</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$85</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product11.jpg" alt="Nike Blazer">
+                                <div class="product-badge">جديد</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Nike</div>
+                                <div class="product-name">Nike Blazer Mid '77</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$100</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="images/product12.jpg" alt="Reebok Club C">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Reebok</div>
+                                <div class="product-name">Reebok Club C 85</div>
+                                <div class="product-price">
+                                    <div>
+                                        <span class="price">$75</span>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <div class="page-item active">1</div>
+                        <div class="page-item">2</div>
+                        <div class="page-item">3</div>
+                        <div class="page-item"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Abo Salah</h3>
+                    <p>متجر متخصص في بيع أحدث الأحذية الرياضية من أشهر الماركات العالمية بأسعار منافسة وجودة عالية.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>الماركات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Reebok</a></li>
+                        <li><a href="#">New Balance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>اتصل بنا</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> شارع الملك فهد، الرياض، المملكة العربية السعودية</p>
+                        <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                        <p><i class="fas fa-envelope"></i> info@abosalah.com</p>
+                        <p><i class="fas fa-clock"></i> السبت - الخميس: 9:00 ص - 10:00 م</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abo Salah. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+        <div class="cart-header">
+            <div class="cart-title">سلة التسوق</div>
+            <div class="close-cart"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>المجموع:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <a href="#" class="checkout-btn">إتمام الشراء</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
